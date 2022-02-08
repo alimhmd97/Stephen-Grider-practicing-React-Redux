@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 import { createStore } from "redux";
 import Reducers from "./reducers";
 const App = (
-  <Provider>
+  <Provider store={createStore(Reducers)}>
     <App />
   </Provider>
 );
