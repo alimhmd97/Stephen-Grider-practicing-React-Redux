@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import { Song } from "./song";
 import { SelectSong } from "../actions";
-function SongsList({ songs, selectedSongs }) {
+function SongsList({ songs, SelectSong }) {
   return (
     <div>
       {songs.map((song) => {
@@ -10,10 +10,9 @@ function SongsList({ songs, selectedSongs }) {
             key={song.title}
             songTitle={song.title}
             songDuration={song.duration}
-            // selectSong={() => {
-            //   console.log(selectedSongs);
-            //   SelectSong(song);
-            // }}
+            selectSong={() => {
+              SelectSong(song);
+            }}
           />
         );
       })}
