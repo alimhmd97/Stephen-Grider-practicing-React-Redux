@@ -7,4 +7,14 @@ const SelectSong = (song) => {
   };
 };
 
-export { SelectSong };
+const increament = () => {
+  return {
+    type: "INCREAMENT",
+  };
+};
+const decreament = () => {
+  return {
+    type: "DECREAMENT",
+  };
+};
+export { SelectSong, decreament, increament };

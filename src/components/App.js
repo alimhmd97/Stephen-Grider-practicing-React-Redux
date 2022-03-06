@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import SongDetails from "./songDetails";
 import SongsList from "./songsList";
 import "./app.css";
+import Counter from "./counter";
 class App extends Component {
   render() {
     return (
@@ -11,6 +12,10 @@ class App extends Component {
           <SongsList />
 
           <SongDetails />
+        </div>
+        <hr />
+        <div>
+          <Counter />
         </div>
       </BrowserRouter>
     );
